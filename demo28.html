@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>demo28</title>
+        <script>
+            //map object - key value pair
+
+            const demomap = new Map()
+            demomap.set("id",123)
+            demomap.set("name","klu")
+            demomap.set("age",40.5)
+            demomap.set("status",false)
+            demomap.set("name","klef")//duplicate key-klu will be updates as klef
+
+            document.writeln("map size="+demomap.size+"</br>")
+            document.writeln("map type="+typeof demomap+"</br>")
+            document.writeln(demomap.get("id")+"</br>")
+            document.writeln(demomap.get("location")+"</br>")//if key is not present then the output is undefined 
+            document.writeln(demomap.has("id")+"</br>")//true if present
+            document.writeln(demomap.has("location")+"</br>")//false if not present
+            document.writeln("Deletion"+demomap.delete("status")+"</br>")//true and deletion is done if key is found
+            document.writeln("map size="+demomap.size+"</br>")
+            document.writeln("<u>Display map keys</u></br>")
+
+            for(let k of demomap.keys())
+            {
+                document.writeln(k)
+            }
+            document.writeln("</br>")
+            document.writeln("<u>Display map values</u></br>")
+
+            for(let v of demomap.values())
+            {
+                document.writeln(v)
+            }
+            document.writeln("</br>")
+            document.writeln("<u>Display map values based on keys</u></br>")
+
+            for(let k of demomap.keys())
+            {
+                document.writeln(demomap.get(k))
+            }
+            document.writeln("</br>")
+
+            document.writeln("<u>Display map keys & values</u></br>")
+
+           /* for(const x of demomap.entries())// it will give both key and values
+            {
+                document.writeln(x)
+            }
+            Output:- Display map keys & values
+                    id,123 name,klef age,40.5
+            */
+
+
+            for(const [k,v] of demomap.entries())// it will give both key and values
+            {
+                document.writeln(k+":"+v)
+            }
+            document.writeln("</br>")
+
+            demomap.clear()
+            document.writeln("map size="+demomap.size+"</br>")
+        </script>
+        
+    </head>
+    <body>
+          
+    </body>
+</html>

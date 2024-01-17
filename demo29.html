@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>demo29</title>
+        <script>
+//map object - foreach method
+
+
+const mapobj1 = new Map()
+
+mapobj1.set(1,101)
+mapobj1.set("id",1234)
+mapobj1.set("name","klu")
+
+document.writeln("Map Object 1 Size="+mapobj1.size+"</br>")
+
+document.writeln("<u>Map Object 1 values</u></br>")
+mapobj1.forEach((v) => document.writeln(v))//when there is only 1 arguement in forEach then it will be considered as value, i.e when there is only on arguement
+
+document.writeln("</br>")
+
+document.writeln("<u>Map Object 1 keys and values values</u></br>")
+
+mapobj1.forEach((value,key)=>{
+                            document.writeln(key+":"+value)
+                            }) // when there are 2 arguements(x,y) then x=>value y=>key  always.
+
+ document.writeln("</br>")
+const mapobj2 = new Map([ ["id",101], ["name","klu"] ])// constructor
+document.writeln("Map Object 2 Size="+mapobj2.size+"</br>")
+document.writeln("<u>Map Object 2 values</u></br>")
+mapobj2.forEach((v)=>document.writeln(v))
+document.writeln("</br>")
+document.writeln("<u>Map Object 2 keys and values values</u></br>")
+
+      const display = (v,k)=> {
+            document.writeln(k+":"+v)
+        }
+mapobj2.forEach(display) // where display is callback,we are passing as method i.e arguement to another function
+        </script>
+        
+    </head>
+    <body>
+          
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>demo25</title>
+        <script>
+            //arrow function demo
+
+           const sum = (a,b) => a+b
+           document.writeln("Output="+sum(10.5,20.6))
+          
+           /*const add=(a,b) =>{
+            let output = a+b
+            return output
+           };  //ended with semi colon and if we want to use curly brace then we have to use ---return--- statements*/
+           const mul = (x,y) =>{
+            let output = x*y
+            return output
+           }
+           document.writeln("Output = "+mul(13,14))
+
+           document.writeln("</br>")
+
+          const status= (n)=>{
+            if(n%2==0)
+            return true;
+            else
+            return false;
+           }
+          let n= parseInt(prompt("Enter the number",0))
+           if(status(n))
+           document.writeln(n+" is Even")
+           else
+           document.writeln(n+" is Odd")
+
+        </script>
+        
+    </head>
+    <body>
+          
+    </body>
+</html>

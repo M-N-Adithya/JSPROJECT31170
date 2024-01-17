@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>demo36</title>
+        <script>
+            //parameterised constructor
+            class Product
+            {
+                constructor(id,category,name,cost)
+                {
+                    this.pid=id
+                    this.pcategory=category
+                    this.pname=name
+                    this.pcost=cost
+                }
+                display()
+                {
+                    document.writeln(`Product ID=${this.pid}</br> Product Category=${this.pcategory}</br> Person Name= ${this.pname} </br>Person Cost= ${this.pcost} </br>`)
+                }
+            }
+            let p1=new Product(101,"Book","MSWD",280.5)
+            p1.display()
+            let p2=new Product(101,"clothes","saree",4999.0)
+            p2.display()
+            
+        </script>
+        
+    </head>
+    <body>
+          
+    </body>
+</html>

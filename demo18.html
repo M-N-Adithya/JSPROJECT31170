@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>demo18</title>
+        <script>
+            //Arrays
+        document.writeln("<u>Demo on Arrays</u></br>")
+        const a = [10,20,30]//same type of elements(homogenous) else (heterogenous)
+        document.writeln(a+"</br>")
+        document.writeln(typeof a+ "</br>")
+        document.writeln(a.length+"</br>")
+        document.writeln(a[0]+"</br>")
+        document.writeln(a[2]+"</br>")
+        document.writeln(a[5]+"</br>")
+        document.writeln(typeof a[0]+"</br>")
+        a[2]="klu"
+        document.writeln(a+"</br>")
+        a[3]="cse"
+        document.writeln(a+"</br>")
+        a.push(40)
+        a.push("mswd")
+        document.writeln(a+"</br>")
+        document.writeln(a.length+"</br>")
+        a.pop()
+        document.writeln(a+"</br>")
+        document.writeln(a.length+"</br>")
+        document.writeln(a.reverse()+"</br>")//it will modify (physically )the list(array)
+        document.writeln(a.sort()+"</br>")
+        document.writeln("Array:"+a+"</br>")
+        let element=a.shift()//1st element will be removed
+        document.writeln(element+"</br>")
+        document.writeln("After Shifting:"+a+"</br>")
+        let len = a.unshift(10)
+        document.writeln(len+"</br>")
+        document.writeln("After Unshifting:"+a+"</br>")
+        len = a.unshift("psqt","aws",143)
+        document.writeln(len+"</br>")
+        document.writeln("After Unshifting:"+a+"</br>")
+        document.writeln("1)<u> Display Array Elements using for loop</u></br>")
+        for(let i=0;i<a.length;i++)
+        {
+            document.writeln(a[i]+"</br>")
+        }
+        document.writeln("2)<u> Display Array Elements using for IN loop</u></br>")
+        for(let i in a)//here i stands for index not element
+        {
+            document.writeln(a[i]+"</br>")
+        }
+        document.writeln("3)<u> Display Array Elements using for OF loop</u></br>")
+        for(let element of a)//here element gives the element itself not index
+        {
+            document.writeln(element+"</br>")
+        }
+    </script>
+        
+    </head>
+    <body>
+         
+    </body>
+</html>
